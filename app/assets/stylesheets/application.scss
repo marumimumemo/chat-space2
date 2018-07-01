@@ -26,7 +26,15 @@
 		  width: 100%;
 		  .name{
 		  	padding-left: 20px;
-		  	padding-top: 35px
+		  	padding-top: 35px;
+		  }
+		  .fa.fa-cog{
+          float:right;
+          padding-right: 20px;
+		  }
+		  .fa.fa-edit{
+          float:right;
+          padding-right: 20px;
 		  }
 		}
 		.bottom-box{
