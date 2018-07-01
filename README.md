@@ -3,8 +3,8 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index:true,null: false|
-|mail|string|unique:true,null; false|
+|name|string|index:true, null: false|
+|mail|string|unique:true, null; false|
 |password|string|null; false|
 
 ### Association
