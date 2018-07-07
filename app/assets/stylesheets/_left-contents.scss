@@ -1,31 +1,35 @@
+@import "variable.scss";
 	.left-contents{
 	  height: 100%;
 	  width: 300px;
 	  float: left;
-
+	  background-color:#2f3e51;
 		.top-box{
 		  background-color:#253141;
 		  font-size: 16px;
 		  font-weight: bold;
+		  padding-top: 20px;
 		  color: #FFFFFF;
-		  padding-bottom: 20px;
 		  height: 100px;
 		  width: 100%;
 		  .name{
-		  	padding-left: 20px;
-		  	padding-top: 35px;
+		  float:left;
+		  padding-left: 20px;
+		  padding-top: 20px;
 		  }
 		  .fa.fa-cog{
-          float:right;
+		  float:right;
+		  padding-top: 20px;
           padding-right: 20px;
 		  }
 		  .fa.fa-edit{
-          float:right;
+		  float:right;
+		  padding-top: 20px;
           padding-right: 20px;
 		  }
 		}
 		.bottom-box{
-		  background-color:#2f3e51;
+		  height: 535px;
 			.group-name{
 			font-size: 15px;
 			padding-top: 20px;
