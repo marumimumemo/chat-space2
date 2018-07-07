@@ -37,5 +37,8 @@
     .footer
       %form.form
       %input.message(placeholder="type a message" type="text")
-      %i.fa.fa-image
-      %input.submit(type="submit" name="commit" value="Send" )
+      %label
+        %span.filelabel
+          %i.fa.fa-image
+        %input.file(type="file" name="datafile" id="filesend")
+        %input.submit(type="submit" name="commit" value="Send" )
