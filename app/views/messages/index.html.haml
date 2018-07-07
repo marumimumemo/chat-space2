@@ -3,8 +3,8 @@
 .left-contents
   .top-box
     %h3.name 名前
-    %i.fa.fa-edit
     %i.fa.fa-cog
+    %i.fa.fa-edit
   .bottom-box
     .firstbox
       %h4.group-name グループ名
@@ -35,3 +35,8 @@
       %p.date 2018/06/30 06:27:07
       %h5.message なるほど
   .form-contents
+    .footer
+      %form.form
+      %input.message(placeholder="type a message" type="text")
+      %i.fa.fa-image
+      %input.submit(type="submit" name="commit" value="Send" )

@@ -1,0 +1,89 @@
+	.right-contents{
+	  height: 100%;
+	  width: calc(100% - 300px);
+	  float: right;
+	  position: relative;
+	   .header{
+		  height: 85px;
+		  background-color:#FFFFFF;
+		  .groupname{
+		   margin-top: 35px;
+		   padding-left: 40px;
+		   color: #333333;
+		   font-size: 20px;
+		   margin-bottom: 15px;
+		  }
+		  .membername{
+		   padding-left: 40px;
+		   padding-bottom: 14px;
+		   color: #999999;
+		   font-size: 12px;
+		  }
+		  .edit-button {
+          font-size: 15px;
+          color:#5BADEA;
+          border: 1px solid #5BADEA;
+          line-height: 40px;
+          width: 50px;
+          padding: 0 20px;
+          margin-top: 28px;
+          margin: 28px auto 0px;
+          text-align: center;
+          float: right;
+          }
+          .hr{
+          	height: 1px;
+          	border-color:#eeeeee;
+          	border-style: solid;
+          	border-width: 1px 0px 0px 0px;
+          }
+        }
+       .messages-contents{
+       	  height: 590px;
+       	  width: calc(100% - 300px);
+		  .message-box{
+		    .name{
+		    font-size: 16px;
+		    padding-top: 40px;
+		    padding-left: 40px;
+		    color: #434A54;
+		    font-weight: bold;
+		    }
+		    .date{
+		    font-size: 12px;
+		    padding-left: 40px;
+		    color: #999999;
+		    }
+		    .message{
+		    font-size: 14px;
+		    padding-top: 10px;
+		    padding-left: 40px;
+		    color: #434A54;
+		    }
+		  }
+        }
+       .form-contents{
+       	 background-color:#AAAAAA;
+		 padding-left: 40px;
+         height: 90px;
+         width: calc(100% - 300px);
+         padding-right: 40px;
+         position: absolute;
+         bottom: 0;
+          .footer{
+          	height: 50px;
+          	padding-top: 20px;
+          	padding-left: 10px;
+          	.message{
+          	width: 100%;
+          	font-size: 16px;
+          	color: #434A54;
+          	}
+          	.submit{
+          	padding-left: 15px;
+          	background-color:#38AEF0;
+          	color: #FFFFFF;
+          	}
+          }
+        }
+    }
