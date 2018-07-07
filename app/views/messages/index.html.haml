@@ -3,16 +3,15 @@
 .left-contents
   .top-box
     %h3.name 名前
-    %i.fa.fa-cog
-    %i.fa.fa-edit
+    = link_to "#" do
+      %i.fa.fa-cog
+    = link_to "#" do
+      %i.fa.fa-edit
   .bottom-box
-    .firstbox
+    .box
       %h4.group-name グループ名
       %h5.message メッセージ
-    .secondbox
-      %h4.group-name グループ名
-      %h5.message メッセージ
-    .thirdbox
+    .box
       %h4.group-name グループ名
       %h5.message メッセージ
 .right-contents
