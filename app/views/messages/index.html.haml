@@ -1,26 +1,26 @@
-.top-bar
+.navbar
   チャットスペースが作成されました。
-.left-contents
-  .top-box
-    %h3.name 名前
+.sidebar
+  .sidebar__user
+    %h3.sidebar__user__name 名前
     = link_to "#" do
       %i.fa.fa-cog
     = link_to "#" do
       %i.fa.fa-edit
-  .bottom-box
-    .box
+  .sidebar__group
+    .sidebar__group__box
       %h4.group-name グループ名
       %h5.message メッセージ
-    .box
+    .sidebar__group__box
       %h4.group-name グループ名
       %h5.message メッセージ
-.right-contents
-  .header
+.main-contents
+  .main-contents__header
     .edit-button Edit
     %h3.groupname グループ名
     %p.membername Member:メンバー名
     %hr
-  .messages-contents
+  .main-contents__messages
     .message-box
       %h4.name 名前
       %p.date 2018/06/30 06:27:07
@@ -33,7 +33,7 @@
       %h4.name 名前
       %p.date 2018/06/30 06:27:07
       %h5.message なるほど
-  .form-contents
+  .main-contents__footer
     .footer
       %form.form
       %input.message(placeholder="type a message" type="text")

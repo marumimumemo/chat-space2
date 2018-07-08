@@ -1,47 +1,44 @@
-@import "variable.scss";
-	.left-contents{
+@import "variables.scss";
+	.sidebar{
 	  height: 100%;
 	  width: 300px;
 	  float: left;
 	  background-color:#2f3e51;
-		.top-box{
+		&__user{
 		  background-color:#253141;
 		  font-size: 16px;
 		  font-weight: bold;
-		  padding-top: 20px;
+		  padding-top: $gutter;
 		  color: #FFFFFF;
 		  height: 100px;
 		  width: 100%;
-		  .name{
+		  &__name{
 		  float:left;
+		  padding-top: 20px;
 		  padding-left: 20px;
-		  padding-top: 20px;
 		  }
-		  .fa.fa-cog{
-		  float:right;
-		  padding-top: 20px;
-          padding-right: 20px;
-		  }
-		  .fa.fa-edit{
+		  .fa{
 		  float:right;
 		  padding-top: 20px;
           padding-right: 20px;
 		  }
 		}
-		.bottom-box{
+		&__group{
 		  height: 535px;
+		  &__box{
 			.group-name{
 			font-size: 15px;
 			padding-top: 20px;
-			padding-bottom: 5px;
 			padding-left: 20px;
+			padding-bottom: 5px;
 			color: #FFFFFF;
-		  }
+		    }
 			.message{
 			font-size: 11px;
 			padding-left: 20px;
 			padding-bottom: 40px;
 			color: #FFFFFF;
+		    }
 		  }
 		}
-	 }
+	}
