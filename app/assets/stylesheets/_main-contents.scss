@@ -1,8 +1,9 @@
 @import "variables.scss";
 	.main-contents{
-	  height: 100%;
+	  height: 100vh;
 	  width: calc(100% - 300px);
 	  float: right;
+    position: relative;
 	  &__header{
 		  height: 100px;
 		  background-color:$white;
@@ -18,7 +19,7 @@
        text-align: center;
        float: right;
        }
-		  .groupname{
+		  .group-name{
        float: left;
 		   margin-top: 35px;
 		   padding-left: $gutter-large;
@@ -26,7 +27,7 @@
 		   font-size: $gutter;
 		   margin-bottom: 15px;
 		   }
-		  .membername{
+		  .member-name{
 		   padding-left: $gutter-large;
 		   padding-bottom: 14px;
 		   color: #999999;
@@ -41,9 +42,7 @@
         }
     }
     &__messages{
-      height: 590px;
-      width: calc(100% - 300px);
-		  .message-box{
+		  &__box{
         padding-top: 46px;
 		     .name{
 		     font-size: 16px;
@@ -73,7 +72,7 @@
       background-color:#AAAAAA;
 		  padding-left: $gutter-large;
       height: 90px;
-      width: calc(100% - 300px);
+      width: 100%;
       padding-right: $gutter-large;
       position: absolute;
       bottom: 0;
@@ -81,21 +80,22 @@
           height: 50px;
           padding-top: $gutter;
           padding-left: 10px;
+          position: relative;
           .message{
           	width: 85%;
           	font-size: 16px;
           	color: #434A54;
-            position: relative;
           	}
           .fa{
             position: absolute;
-            top: 26px;
-            right: 190px;
+            right: 160px;
+            top: 25px;
             }
           #filesend {
             display: none;
             }
           .submit{
+            width:50px;
             margin-left: 15px;
           	background-color:#38AEF0;
           	color: $white;

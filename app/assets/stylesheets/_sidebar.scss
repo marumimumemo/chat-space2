@@ -1,6 +1,6 @@
 @import "variables.scss";
 	.sidebar{
-	  height: 100%;
+	  height: 100vh;
 	  width: 300px;
 	  float: left;
 	  background-color:#2f3e51;
@@ -21,10 +21,10 @@
 		  float:right;
 		  padding-top: $gutter;
           padding-right: $gutter;
+          color: $white;
 		  }
 		}
 		&__group{
-		  height: 535px;
 		  &__box{
 			.group-name{
 			font-size: 15px;
