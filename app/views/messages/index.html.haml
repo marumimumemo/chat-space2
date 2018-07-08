@@ -2,10 +2,11 @@
   チャットスペースが作成されました。
 .sidebar
   .sidebar__user
-    %h3.sidebar__user__name 名前
+    %h3.sidebar__user__name
+    = current_user.name
     = link_to "#" do
       %i.fa.fa-cog
-    = link_to "#" do
+    = link_to edit_user_path(current_user) do
       %i.fa.fa-edit
   .sidebar__group
     .sidebar__group__box
