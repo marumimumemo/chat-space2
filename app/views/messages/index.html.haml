@@ -1,0 +1,44 @@
+.navbar
+  チャットスペースが作成されました。
+.sidebar
+  .sidebar__user
+    %h3.sidebar__user__name 名前
+    = link_to "#" do
+      %i.fa.fa-cog
+    = link_to "#" do
+      %i.fa.fa-edit
+  .sidebar__group
+    .sidebar__group__box
+      %h4.group-name グループ名
+      %h5.message メッセージ
+    .sidebar__group__box
+      %h4.group-name グループ名
+      %h5.message メッセージ
+.main-contents
+  .main-contents__header
+    .edit-button Edit
+    %h3.group-name グループ名
+    %p.member-name Member:メンバー名
+    %hr
+  .main-contents__messages
+    .main-contents__messages__box
+      %h4.name 名前
+      %p.date 2018/06/30 06:27:07
+      %h5.message なるほど
+    .main-contents__messages__box
+      %h4.name 名前
+      %p.date 2018/06/30 06:27:07
+      %h5.message なるほど
+    .main-contents__messages__box
+      %h4.name 名前
+      %p.date 2018/06/30 06:27:07
+      %h5.message なるほど
+  .main-contents__footer
+    .footer
+      %form.form
+      %input.message(placeholder="type a message" type="text")
+      %label
+        %span.filelabel
+          %i.fa.fa-image
+        %input.file(type="file" name="datafile" id="filesend")
+        %input.submit(type="submit" name="commit" value="Send" )

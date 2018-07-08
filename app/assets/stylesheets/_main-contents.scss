@@ -1,0 +1,104 @@
+.main-contents {
+    height: 100vh;
+    width: calc(100% - 300px);
+    float: right;
+    position: relative;
+    &__header {
+        height: 100px;
+        background-color:$white;
+        .edit-button {
+            font-size: 15px;
+            color:#5BADEA;
+            border: 1px solid #5BADEA;
+            line-height: $gutter-large;
+            width: 50px;
+            padding: 0 $gutter;
+            margin-top: 28px;
+            margin-right: $gutter-large;
+            text-align: center;
+            float: right;
+        }
+        .group-name {
+            float: left;
+            margin-top: 35px;
+            padding-left: $gutter-large;
+            color: #333333;
+            font-size: $gutter;
+            margin-bottom: 15px;
+        }
+        .member-name {
+            padding-left: $gutter-large;
+            padding-bottom: 14px;
+            color: #999999;
+            font-size: 12px;
+            clear: both;
+        }
+        .hr {
+            height: 1px;
+            border-color:#eeeeee;
+            border-style: solid;
+            border-width: 1px 0px 0px 0px;
+        }
+    }
+    &__messages {
+        &__box {
+        padding-top: 46px;
+            .name {
+                font-size: 16px;
+                padding-top: $gutter-large;
+                padding-left: $gutter-large;
+                color: #434A54;
+                font-weight: bold;
+                float: left;
+            }
+            .date {
+                font-size: 12px;
+                padding-left: $gutter-large;
+                color: #999999;
+                float: left;
+                padding-top: 43px;
+            }
+            .message {
+                font-size: 14px;
+                padding-top: 10px;
+                padding-left: $gutter-large;
+                color: #434A54;
+                clear: both;
+            }
+        }
+    }
+    &__footer {
+        background-color:#AAAAAA;
+        padding-left: $gutter-large;
+        height: 90px;
+        width: 100%;
+        padding-right: $gutter-large;
+        position: absolute;
+        bottom: 0;
+        .footer {
+            height: 50px;
+            padding-top: $gutter;
+            padding-left: 10px;
+            position: relative;
+            .message {
+                width: 85%;
+                font-size: 16px;
+                color: #434A54;
+            }
+            .fa{
+                position: absolute;
+                right: 160px;
+                top: 25px;
+            }
+            #filesend {
+                display: none;
+            }
+            .submit{
+                width:50px;
+                margin-left: 15px;
+                background-color:#38AEF0;
+                color: $white;
+            }
+        }
+    }
+}
