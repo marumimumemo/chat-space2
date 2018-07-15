@@ -58,7 +58,7 @@
                 float: left;
                 padding-top: 43px;
             }
-            .message {
+            .message__content {
                 font-size: 14px;
                 padding-top: 10px;
                 padding-left: $gutter-large;
@@ -67,7 +67,7 @@
             }
         }
     }
-    &__footer {
+    &__form {
         background-color:#AAAAAA;
         padding-left: $gutter-large;
         height: 90px;
@@ -75,25 +75,26 @@
         padding-right: $gutter-large;
         position: absolute;
         bottom: 0;
-        .footer {
+        .form {
             height: 50px;
             padding-top: $gutter;
             padding-left: 10px;
             position: relative;
-            .message {
+            &__message {
                 width: 85%;
                 font-size: 16px;
                 color: #434A54;
             }
+
             .fa{
                 position: absolute;
                 right: 160px;
                 top: 25px;
             }
-            #filesend {
+            .hidden {
                 display: none;
             }
-            .submit{
+            &__submit{
                 width:50px;
                 margin-left: 15px;
                 background-color:#38AEF0;
