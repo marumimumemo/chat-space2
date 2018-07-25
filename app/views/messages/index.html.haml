@@ -2,43 +2,34 @@
   チャットスペースが作成されました。
 .sidebar
   .sidebar__user
-    %h3.sidebar__user__name 名前
-    = link_to "#" do
+    %h3.sidebar__user__name
+      = current_user.name
+    = link_to new_group_path do
       %i.fa.fa-cog
-    = link_to "#" do
+    = link_to edit_user_path(current_user) do
       %i.fa.fa-edit
   .sidebar__group
     .sidebar__group__box
-      %h4.group-name グループ名
-      %h5.message メッセージ
-    .sidebar__group__box
-      %h4.group-name グループ名
-      %h5.message メッセージ
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .sidebar__group__box__groupname
+          = group.name
+        .sidebar__group__box__message
+          = group.show_last_message
 .main-contents
   .main-contents__header
     .edit-button Edit
     %h3.group-name グループ名
-    %p.member-name Member:メンバー名
+    %p.member-name
+      Member: member
     %hr
   .main-contents__messages
-    .main-contents__messages__box
-      %h4.name 名前
-      %p.date 2018/06/30 06:27:07
-      %h5.message なるほど
-    .main-contents__messages__box
-      %h4.name 名前
-      %p.date 2018/06/30 06:27:07
-      %h5.message なるほど
-    .main-contents__messages__box
-      %h4.name 名前
-      %p.date 2018/06/30 06:27:07
-      %h5.message なるほど
-  .main-contents__footer
-    .footer
-      %form.form
-      %input.message(placeholder="type a message" type="text")
-      %label
-        %span.filelabel
+    = render @messages
+  .main-contents__form
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        = f.label :image, class: 'form__image' do
           %i.fa.fa-image
-        %input.file(type="file" name="datafile" id="filesend")
-        %input.submit(type="submit" name="commit" value="Send" )
+          = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'

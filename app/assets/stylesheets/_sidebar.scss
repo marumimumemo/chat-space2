@@ -25,14 +25,14 @@
     }
     &__group {
         &__box {
-            .group-name {
+            &__groupname {
                 font-size: 15px;
                 padding-top: $gutter;
                 padding-left: $gutter;
                 padding-bottom: 5px;
                 color: $white;
             }
-            .message {
+            &__message {
                 font-size: 11px;
                 padding-left: $gutter;
                 padding-bottom: $gutter;

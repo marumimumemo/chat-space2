@@ -1,0 +1,10 @@
+.main-contents__messages__box
+    %h4.name
+        = message.user.name
+    %p.date
+        = message.created_at
+    %h5.message
+    - if message.content.present?
+        %p.message__content
+            = message.content
+        = image_tag message.image.url, class: 'message__image' if message.image.present?
