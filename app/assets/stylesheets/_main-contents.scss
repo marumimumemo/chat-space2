@@ -6,11 +6,9 @@
     &__header {
         height: 100px;
         background-color:$white;
-        position: fixed;
-        width: 78%;
+        width: 100%;
         margin-top: 25px;
         padding-bottom: 30px;
-        z-index: 1;
         .edit-button {
             font-size: 15px;
             color:#5BADEA;
@@ -46,10 +44,8 @@
         }
     }
     &__messages {
-        padding-top: 80px;
-        padding-bottom: 160px;
-        overflow: auto;
-        position: absolute;
+        height: calc(100vh - 90px - 200px);
+        overflow-y: scroll;
         &__box {
         padding-top: 46px;
             .name {
@@ -80,9 +76,9 @@
         background-color:#AAAAAA;
         padding-left: $gutter-large;
         height: 90px;
-        width: 70%;
+        width: 100%;
         padding-right: $gutter-large;
-        position: fixed;
+        position:absolute;
         bottom: 0;
         .form {
             height: 50px;
