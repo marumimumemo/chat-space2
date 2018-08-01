@@ -15,6 +15,9 @@ $(function(){
                </div>`
     return html;
   }
+  function scroll() {
+  $('.main-contents__messages').animate({scrollTop: $('.main-contents__messages')[0].scrollHeight}, 'fast');
+  }
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -30,7 +33,7 @@ $(function(){
     .done(function(message){
       var html = buildHTML(message);
       $('.main-contents__messages').append(html);
-      $('.main-contents__messages').animate({scrollTop: $('.main-contents__messages')[0].scrollHeight}, 'fast');
+      scroll();
       $('#new_message')[0].reset();
     })
     .fail(function(){
