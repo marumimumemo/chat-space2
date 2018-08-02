@@ -15,9 +15,11 @@ $(function(){
                </div>`
     return html;
   }
+
   function scroll() {
   $('.main-contents__messages').animate({scrollTop: $('.main-contents__messages')[0].scrollHeight}, 'fast');
   }
+
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
