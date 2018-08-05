@@ -44,7 +44,7 @@
         }
     }
     &__messages {
-        height: calc(100vh - 90px - 200px);
+        height: calc(100vh - 90px - 160px);
         overflow-y: scroll;
         &__box {
         padding-top: 46px;
@@ -82,9 +82,10 @@
         bottom: 0;
         .form {
             height: 50px;
+            width: calc(100% - 0px - 70px);
             padding-top: $gutter;
             padding-left: 10px;
-            position: relative;
+            position: absolute;
             &__message {
                 width: 85%;
                 font-size: 16px;
@@ -100,8 +101,9 @@
                 display: none;
             }
             &__submit{
-                width:50px;
-                margin-left: 15px;
+                position: absolute;
+                width: 50px;
+                margin-left: 5px;
                 background-color:#38AEF0;
                 color: $white;
             }
