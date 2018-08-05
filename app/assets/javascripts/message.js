@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     var img = message.image ? `<img src="${ message.image }" class='message__image'>`: ""
-    var html = `<div class="main-contents__messages__box">
+    var html = `<div class="main-contents__messages__box" data-id=${ message.id }>
                   <h4 class="name">
                     ${ message.name }
                   </h4>
@@ -42,4 +42,25 @@ $(function(){
       alert('error');
     })
   })
+
+  $(function(){
+    setInterval(update, 5000);
+  });
+
+  function update(){
+    var message_id = $('.main-contents__messages__box:last').data('id');
+    $.ajax({
+      url: location.href,
+      type: 'GET',
+      data: { id: message_id },
+      dataType: 'json'
+    })
+    .always(function(messages){
+      messages.forEach(function(message){
+      var html = buildHTML(message);
+      $('.main-contents__messages').append(html);
+      scroll();
+      });
+    });
+  }
 });
