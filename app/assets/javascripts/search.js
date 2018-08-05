@@ -20,7 +20,7 @@ function appendNoUser(user) {
   }
 
 function appendToMember(userName, userId) {
-   var html =
+    var html =
    `<div class='chat-group-user clearfix js-chat-member' id='chat-group-user-${ userName }'>
      <input name='group[user_ids][]' type='hidden' value='${ userId }'>
      <p class='chat-group-user__name'>${ userName }</p>
@@ -33,7 +33,7 @@ function appendToMember(userName, userId) {
     var input = $("#user-search-field").val();
     $.ajax({
       type: 'GET',
-      url: '/users/search',
+      url: '/users',
       data: { keyword: input },
       dataType: 'json'
     })
@@ -53,14 +53,14 @@ function appendToMember(userName, userId) {
     })
   });
 
-  $(document).on('click', '.user-search-add', function(){
+  $("#user-search-result").on('click', '.chat-group-user__btn--add', function(){
     var userName = $(this).data('user-name');
     var userId = $(this).data('user-id');
     appendToMember(userName, userId);
     $(this).parent().remove();
   });
 
-  $(document).on('click', '.user-search-remove', function(){
+  $("#chat-group-users").on('click', '.js-remove-btn', function(){
     $(this).parent().remove();
   });
 });
