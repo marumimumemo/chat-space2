@@ -58,9 +58,9 @@ $(function(){
     .always(function(messages){
       messages.forEach(function(message){
         var html = buildHTML(message);
-        $('.main-contents__messages').append(html);
-        scroll();
       });
+      $('.main-contents__messages').append(html);
+      scroll();
     });
   }
 });
