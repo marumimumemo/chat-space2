@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock 'Capistrano Version: 3.11.0 (Rake Version: 12.3.1)'
+lock '3.11.0'
 
 set :application, 'chat-space2'
 set :repo_url,  'git@github.com:marumimumemo/chat-space2.git'
