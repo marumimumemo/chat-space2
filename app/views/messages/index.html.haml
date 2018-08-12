@@ -1,5 +1,3 @@
-.navbar
-  チャットスペースが作成されました。
 .sidebar
   .sidebar__user
     %h3.sidebar__user__name
@@ -9,13 +7,13 @@
     = link_to edit_user_path(current_user) do
       %i.fa.fa-edit
   .sidebar__group
-    .sidebar__group__box
     - current_user.groups.each do |group|
-      = link_to group_messages_path(group) do
-        .sidebar__group__box__groupname
-          = group.name
-        .sidebar__group__box__message
-          = group.show_last_message
+      .sidebar__group__box
+        = link_to group_messages_path(group) do
+          .sidebar__group__box__groupname
+            = group.name
+          .sidebar__group__box__message
+            = group.show_last_message
 .main-contents
   .main-contents__header
     .edit-button Edit
