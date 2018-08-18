@@ -17,9 +17,12 @@
 .main-contents
   .main-contents__header
     .edit-button Edit
-    %h3.group-name グループ名
+    %h3.group-name
+      = @group.name
     %p.member-name
-      Member: member
+      Member:
+      - @group.users.each do |user|
+        = user.name
     %hr
   .main-contents__messages
     = render @messages
