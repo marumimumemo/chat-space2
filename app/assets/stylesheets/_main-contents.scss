@@ -69,12 +69,17 @@
                 color: #434A54;
                 clear: both;
             }
+            .message__image{
+                padding-top: 10px;
+                padding-left: $gutter-large;
+                clear: both;
+            }
         }
     }
     &__form {
         background-color:#AAAAAA;
         height: 90px;
-        width: 100%;
+        width:  98%;
         position:absolute;
         bottom: 0;
         .form {
