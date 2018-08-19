@@ -43,7 +43,7 @@
         }
     }
     &__messages {
-        height: calc(100vh - 90px - 160px);
+        height: calc(100vh - 90px - 130px);
         overflow-y: scroll;
         &__box {
         padding-top: 46px;
@@ -79,14 +79,14 @@
     &__form {
         background-color:#AAAAAA;
         height: 90px;
-        width:  98%;
+        width:  100%;
         position:absolute;
         bottom: 0;
         .form {
             height: 50px;
             width: 100%;
             padding-top: $gutter;
-            padding-left: 10px;
+            padding-left: 25px;
             position: absolute;
             &__message {
                 width: 85%;
