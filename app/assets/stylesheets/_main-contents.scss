@@ -53,13 +53,13 @@
                 padding-left: $gutter-large;
                 color: #434A54;
                 font-weight: bold;
-                float: left;
+                display: inline-block;
             }
             .date {
                 font-size: 12px;
                 padding-left: $gutter-large;
                 color: #999999;
-                float: left;
+                display: inline-block;
                 padding-top: 43px;
             }
             .message__content {
@@ -67,6 +67,11 @@
                 padding-top: 10px;
                 padding-left: $gutter-large;
                 color: #434A54;
+                clear: both;
+            }
+            .message__image{
+                padding-top: 10px;
+                padding-left: $gutter-large;
                 clear: both;
             }
         }

@@ -4,7 +4,7 @@
     %p.date
         = message.created_at
     %h5.message
-    - if message.content.present?
         %p.message__content
-            = message.content
-        = image_tag message.image.url, class: 'message__image' if message.image.present?
+            = message.content if message.content.present?
+        .message__image
+            = image_tag message.image.url if message.image.present?
